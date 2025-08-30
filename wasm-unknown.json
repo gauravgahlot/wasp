@@ -1,0 +1,8 @@
+{
+  "inherits": ["wasm"],
+  "llvm-target": "wasm32-unknown-unknown",
+  "gc": "leaking",
+  "scheduler": "none",
+  "libc": "none",
+  "default-extldflags": ""
+}
