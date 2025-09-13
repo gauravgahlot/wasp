@@ -1,0 +1,18 @@
+name: "A polyglot WASM Pipeline"
+runtime: "whisk"
+tasks:
+  - name: "initialize"
+    module: "init"
+  - name: "add numbers"
+    module: "add"
+    input:
+      value: 3
+      from: "init"
+  - name: "generate cube"
+    module: "cube"
+    input:
+      from: "add"
+  - name: "print result"
+    module: "result"
+    input:
+      from: "cube"
