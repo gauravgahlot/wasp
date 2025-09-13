@@ -6,6 +6,7 @@ use serde::Deserialize;
 pub(crate) struct Task {
     pub name: String,
     pub module: String,
+    pub language: String,
     pub input: Option<Box<Input>>,
 }
 
@@ -49,7 +50,7 @@ impl Pipeline {
                 }
             }
 
-            println!("  [info] Executing '{}'", &task.name);
+            println!("  [info] Executing '{}' ({})", &task.name, &task.language);
             let out = cmd.args(args).output()?;
             if out.stderr.len() > 0 {
                 println!("  [error] Executing '{}'", &self.name);
@@ -65,7 +66,7 @@ impl Pipeline {
         }
 
         if let Some(o) = output {
-            println!("  [info] Final result: '{}'", o);
+            println!("  [info] Final result: {}", o);
         }
 
         println!("[info] Pipeline finished!");

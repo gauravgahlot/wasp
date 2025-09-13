@@ -3,16 +3,20 @@ runtime: "whisk"
 tasks:
   - name: "initialize"
     module: "init"
+    language: WAT
   - name: "add numbers"
     module: "add"
+    language: Go
     input:
       value: 3
       from: "init"
   - name: "generate cube"
     module: "cube"
+    language: Rust
     input:
       from: "add"
   - name: "print result"
     module: "result"
+    language: Rust
     input:
       from: "cube"
