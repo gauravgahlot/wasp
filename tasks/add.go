@@ -1,8 +1,8 @@
 package main
 
 //export run
-func run(n int32) int32 {
-	return n + 1
+func run(x int32, y int32) int32 {
+	return x + y
 }
 
 func main() {} // <- dummy, not used
