@@ -1,6 +1,15 @@
-# wasp
+<div align="center">
+  <h1><code>wasp</code></h1>
 
-Wasm Pipelines - Demo project for GopherCon
+  <p>
+    <a href="https://webassembly.org/"><strong>W</strong>eb <strong>As</strong>sembly</a> <strong>P</strong>ipeline - Demo project for GopherCon
+  </p>
+
+  <p>
+    <a href="https://github.com/gauravgahlot/whisk/actions?query=workflow%3ACI"><img src="https://github.com/gauravgahlot/whisk/actions/workflows/ci.yaml/badge.svg" alt="build status" /></a>
+    <!-- <a href="https://docs.rs/whisk"><img src="https://docs.rs/whisk/badge.svg" alt="Documentation Status" /></a> -->
+  </p>
+</div>
 
 ### Prerequisites
 
